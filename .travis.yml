@@ -1,7 +1,7 @@
 language: java
 install:
 - bash install.sh
-test:
+script:
 - bash test.sh
 before_script:
 - bash pull.sh
