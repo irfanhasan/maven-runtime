@@ -1,6 +1,6 @@
 language: java
 install:
-- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -Drat.skip=true -B -V
+- bash install.sh
 before_script:
 - bash pull.sh
 after_success:

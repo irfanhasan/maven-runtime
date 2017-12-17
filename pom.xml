@@ -129,7 +129,19 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+    </plugin>
+
+    <plugin>
+        <groupId>org.ekstazi</groupId>
+        <artifactId>ekstazi-maven-plugin</artifactId>
+        <version>5.0.1</version> 
+        <executions>
+            <execution>
+                <id>ekstazi</id>
+                <goals> <goal>select</goal> </goals>
+            </execution>
+        </executions>
+    </plugin>
     </plugins>
   </build>
 
