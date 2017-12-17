@@ -1,0 +1,10 @@
+language: java
+install:
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -Drat.skip=true -B -V
+before_script:
+- bash pull.sh
+after_success:
+- bash push.sh
+env:
+  global:
+    secure: m/LJckPO5jeYWipRbkwlTDl4sHwEs7kibFtjvW8Q+63gzTuyugqkYec4CFcWce+Qa9vHepR/1Hs/ieaOCzfiCkJdesWOkdOKoPLO0UIINFUVsBJ6AcIDfbMIfGgmcLlL0xUGhvmEzpdvVIbeW24K2wYYfuCGKFnYUCJkKgy7a8Wcv389b5VUqmj16jNsdTMQUVNO9JwDWdrlgwi73CWj2DTq9DOvc3TupIi4trCpff/qF+95w5BcVn0caPTob13qeYQLdNtV+LMKtkyBxMbCwN7qrlCnCHhjn8hJAdqppHypiT6pmciDWWGZdzEmbaTw3qEfTdooNIGvkfYkmvrxzWro9NR95pWCYQNG76GJhGZRQqlGTdWO7RF03hfZqfnLiMxoF+m4hhuz530IABIJu+m5O6remQYSzKwzw9RL9l92ItEVjOXuriV7yACgvdu2mElQok7DydtJpPwUERmIySB/lWYhlI+BGAK5IsuxZEdnUMrGt/aEnK2vV3KGeyc+yF8wDTZlOZui3ObmXBeUS4hKT4gU5Ud10FVBCLpstEb3DYvSRMe/CDM3Z4semReo8K/fteTbboe+Fy/1F5vqkQWuT1Se8q8DvuRAiK2ynz5bRfKe0YQj+VY4998fNJPve/WAHUEAL3z2Qk7a/r9zMe38rzPOV/0TvOlNAkljy5M=
